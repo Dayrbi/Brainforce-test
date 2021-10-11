@@ -1,0 +1,863 @@
+body {
+  margin: 0;
+  background-color: antiquewhite;
+}
+.main {
+position: relative;
+max-width: 1440px;
+height: 3071px;
+background: #FFFFFF;
+margin: 0 auto;
+
+}
+div[data-action="form-container"] {
+    position: absolute;
+    width: 31%;
+    height: 359px;
+    right: 1%;
+    top: 2%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    background: url('./assets/img/Rectangle210.png');
+    background-position: center center;
+    background-size: cover;
+    z-index: 5;
+}
+div[data-action="form-container"] > img {
+    position: absolute;
+    right: 1%;
+    top: 1%;
+}
+div[data-action="form-container"] > h4 {
+    width: 88%;
+    height: 50px;
+    font-family: Geometria-Medium;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 124%;
+    color: #333333;
+    margin-left: 6%;
+}
+#form-popup {
+    width: 88%;
+    height: 187px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 6%;
+    margin-bottom: 5%;
+}
+#form-popup > input {
+    width: 74%;
+    height: 43px;
+    background: #F4F4F4;
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding-left: 3%;
+    font-family: Geometria;
+    font-size: 15px;
+    line-height: 130%;
+    color: #828282;
+
+}
+#form-popup > button {
+    width: 50%;
+    height: 43px;
+    background: #FFDB2D;
+    border-radius: 8px;
+    text-align: center;
+    font-family: Geometria;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    color: #333333;
+    border: none;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: flex;
+}
+.header__burger {
+    display: none;
+}
+
+.header {
+position: absolute;
+width: 100%;
+height: 100px;
+}
+.img_vector {
+    position: absolute;
+    left: 2.15%;
+    top: 16px;
+}
+.img_rectangle{
+    position: absolute;
+    left: 56.11%;
+    width: 5.8%;
+    height: 10px;
+}
+.header__numTel {
+    position: absolute;
+    left: 10.2%;
+    top: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.header__numTel > span {
+    font-family: Geometria;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    color: #333333;
+}
+
+.header__menu {
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    width: 44.3%;
+    height: 23px;
+    left: 26.4%;
+    top: 38px;
+
+}
+.header__menu > span {
+    font-family: Geometria;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    color: #333333;
+    flex: none;
+    margin: 0 6% 0 0;
+
+}
+.header__search {
+    position: absolute;
+    width: 5.3%;
+    height: 24px;
+    left: 79.8%;
+    top: 38px;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+.header__search > hr {
+    width: 100%;
+    border-top: 1px dashed #333333;
+    margin: 0;
+}
+.header__search > span {
+    font-family: Geometria;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    color: #333333;
+}
+.header__but {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 10.3%;
+    height: 43px;
+    left: 87.6%;
+    top: 28px;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    font-family: Geometria;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+    background-color: white;
+}
+.main_span {
+    position: absolute;
+    left: 2%;
+    top: 167px;
+    font-family: Geometria;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    color: #333333;
+
+}
+.quastions {
+    position: absolute;
+    width: 31%;
+    height: 102px;
+    left: 2%;
+    top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.quastions > h2 {
+    width: 79.2%;
+    height: 40px;
+    font-family: Geometria;
+    font-size: 30px;
+    line-height: 132%;
+    color: #333333;
+}
+.quastions > span {
+    width: 100%;
+    height: 42px;
+    font-family: Geometria;
+    font-size: 16px;
+    line-height: 130%;
+    color: #828282;
+}
+.product {
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    width: 63.4%;
+    height: 552px;
+    left: 2.08%;
+    top: 342px;
+
+}
+.product__title {
+    width: 23.3%;
+    height: 64px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-right: 1.4%;
+}
+.product__title > h3 {
+    font-family: Geometria-Medium;
+    font-size: 24px;
+    line-height: 30px;
+    color: #333333;
+    margin: 0;
+}
+.product__title > img {
+    position: absolute;
+    width: 21.1%;
+    height: 2px;
+    left: 1.4%;
+    top: 62px;
+}
+.product__content {
+    width: 74.5%;
+    height: 552px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 1%;
+}
+
+.product__content > div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 76px;
+    background: #F4F4F4;
+    border-radius: 8px;
+}
+.product__content__title {
+    width: 82.5%;
+    height: 24px;
+    font-family: Geometria-Medium;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    margin: 0 9.2% 0 0;
+}
+
+
+.product__content__cross {
+    position: absolute;
+    width: 2.8%;
+    height: 19px;
+    left: 91.3%;
+    top: 28px;
+}
+.product__content__title ~ span {
+    height: 178px;
+    width: 81%;
+    font-family: Geometria;
+    font-size: 16px;
+    line-height: 130%;
+    color: #333333;
+    margin: 0 7.5% 15px 0;
+}
+.chat {
+    position: absolute;
+    width: 31%;
+    height: 764px;
+    left: 66.9%;
+    top: 200px;
+    background: #E0E0E0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    
+}
+.chat > h4 {
+    font-family: Geometria-Medium;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 124%;
+    color: #333333;
+    position: relative;
+    top: 17%;
+
+}
+.second-product{
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    width: 63.4%;
+    height: 552px;
+    left: 2.08%;
+    top: 31.3%;
+    z-index: 5;
+
+}
+.third-product{
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    width: 63.4%;
+    height: 552px;
+    left: 2.08%;
+    top: 51.6%;
+    z-index: 5;
+}
+.background {
+    position: absolute;
+    width: 65.5%;
+    height: 1355px;
+    left: 34.5%;
+    top: 1048px;
+    background: url("./assets/img/Rectangle173.png");
+}
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 803px;
+    bottom: 40px;
+    background: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer__info {
+    width: 39.3%;
+    height: 643px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0.35%;
+}
+.footer__info > h1 {
+    font-family: Geometria-Bold;
+    font-size: 30px;
+    line-height: 38px;
+    color: #E0E0E0;
+    margin: 0 0 0 1.8%;
+}
+    
+
+.footer__info__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    height: 324px;
+    margin-top: 40px;
+
+}
+.footer__info__contacts__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+    height: 51px;
+    margin-left: 1.8%;
+
+}
+.footer__info__contacts__container > span {
+    font-family: Geometria;
+    font-size: 16px;
+    line-height: 20px;
+    color: #E0E0E0;
+    margin-bottom: 10px;
+
+}
+.footer__info__contacts__numTel {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 56.5%;
+    height: 21px;
+
+}
+.footer__info__contacts__numTel > span {
+    font-family: Geometria;
+    font-size: 16px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+.footer__info__services {
+    width: 100%;
+    height: 163px;
+    margin-top: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+
+}
+.footer__info__services__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 17.1%;
+    height: 156px;
+    margin-left: 1.77%;
+    margin-right: 3%;
+
+}
+.footer__info__services__container > span {
+    font-family: Geometria-Medium;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+
+
+}
+
+
+.footer__maps {
+    width: 55.3%;
+    height: 643px;
+    border: 2px solid #828282;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background: url("./assets/img/MapsicleMap.png");
+    margin-right: 1.1%;
+}
+.footer__maps > img {
+    position: absolute;
+    width: 2.3%;
+    height: 46px;
+    left: 79%;
+    top: 351px;
+}
+
+.rigts {
+    width: 100%;
+    height: 40px;
+    background: #F4F4F4;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.rigts > span {
+    font-family: Geometria;
+    font-size: 16px;
+    line-height: 130%;
+    color: #333333;
+    margin: 0 2.08% 0 2.08%;
+}
+@media (max-width:1440px) {
+    .main {
+        max-width: 1200px;
+    }
+   .img_rectangle {
+       left: 60%;
+   }
+   .quastions {
+       width: 40%;
+   }
+   .product__content__title ~ span {
+        font-size: 15px;
+   }
+   .footer__info__contacts__numTel {
+       width: 63%;
+   }
+   .footer__maps > img {
+       left: 87%;
+   }
+}
+@media (max-width:1200px) {
+    .main {
+        max-width: 970px;
+        height: 3608px;
+    }
+    .header__burger {
+        position: relative; 
+        width: 40px; 
+        height: 35px;
+        display: block;
+        margin-left: 10px;
+        top: 25px;
+    }
+    .header__burger span, .header__burger::after, .header__burger::before {
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        background: #515758;
+        margin: 0 auto;
+    }
+    .header__burger span {
+        top: 16px;
+    }
+    .header__burger:after, .header__burger:before {
+        content: "";
+    }
+    .header__burger:before {
+        top: 5px;
+    }
+    .header__burger:after {
+        bottom: 5px;
+    }
+
+    .header__menu {
+        display: none;
+    }
+    .header__but {
+        width: 11.3%;
+    }
+    .img_vector {
+        left: 6.15%;
+    }
+    .header__numTel {
+        left: 12.2%;
+    }
+    .img_rectangle {
+        display: none;
+    }
+
+    .quastions > h2 {
+        font-size: 20px;
+    }
+
+    .quastions > span {
+        font-size: 14px;
+    }
+
+    .product {
+        width: 85.4%;
+    }
+
+    .chat {
+        width: 100%;
+        height: 270px;
+        left: 0;
+        top: 900px;
+        z-index: 5;
+    }
+    .second-product {
+        width: 85.4%;
+        top: 34.3%;
+    }
+    .third-product {
+        width: 85.4%;
+        top: 51.6%;
+    }
+    .background {
+        top: 1178px;
+    }
+    .footer {
+        height: 1108px;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer__info {
+        width: 100%;
+        height: 370px;
+        align-items: center;
+        margin-left: 0.35%;
+    }
+    .footer__info__contacts {
+        flex-direction: row;
+        width: 100%;
+    }
+    .footer__info__contacts__container {
+        width: 100%;
+        height: 51px;
+        justify-content: flex-start;
+    }
+    .footer__info__contacts__numTel {
+        width: 63.5%;
+        flex-direction: column;
+    }
+    .footer__maps {
+        width: 74.3%;
+    }
+    .footer__maps > img {
+        left: 67%;
+        top: 720px;
+        width: 3.3%;
+    }
+
+}
+
+
+
+
+@media (max-width:992px) {
+    .main {
+        max-width: 750px;
+    }
+    .img_vector {
+        left: 8.15%;
+    }
+    .header__numTel {
+        left: 16.2%;
+    }
+    .header__search {
+        width: 8.3%;
+        left: 69.8%;
+    }
+    .header__but {
+        width: 16.3%;
+        left: 79.6%;
+    }
+    .quastions {
+        width: 50%;
+    }
+    .product__title  > h3 {
+        font-size: 18px;
+    }
+    .product__content__title {
+        font-size: 14px;
+    }
+    .product__content__title ~ span {
+        font-size: 13px;
+    }
+    .product__content__cross {
+        width: 3.8%;
+    }
+    .footer__info {
+        font-size: 26px;
+    }
+    .footer__info__contacts__numTel {
+        width: 100%;
+    }
+    .footer__info__contacts__numTel > span {
+        font-size: 13px;
+    }
+    .footer__maps {
+        background-position: center center;
+        background-size: cover;
+    }
+}
+@media (max-width:767px) {
+    .main {
+        max-width: 500px;
+        height: 3400px;
+    }
+    .img_vector {
+        left: 14.15%;
+    }
+    .header__numTel {
+        left: 1.2%;
+        top: 80%;
+
+    }
+    .header__search {
+        width: 12.3%;
+        left: 55%;
+    }
+    .header__but {
+        width: 24.3%;
+        left: 71%;
+    }
+    .quastions {
+        width: 65%;
+    }
+    .product {
+        display: flex;
+        flex-direction: column;
+    }
+    .second-product {
+        display: flex;
+        flex-direction: column;
+        top: 36%;
+    }
+    .third-product {
+        display: flex;
+        flex-direction: column;
+        top: 54.5%;
+    }
+    .product__title {
+        margin-bottom: 8px;
+    }
+    .product__title  > h3 {
+        font-size: 16px;
+    }
+    .product__content {
+        width: 95%;
+    }
+    .product__content > div {
+        margin-bottom: 6px;
+    }
+
+    .product__content__title {
+        font-size: 12px;
+    }
+    .product__content__title ~ span {
+        font-size: 12px;
+    }
+    .product__content__cross {
+        width: 4.2%;
+    }
+    .chat {
+        width: 100%;
+        height: 250px;
+        left: 0;
+        top: 970px;
+        z-index: 5;
+    }
+    .footer {
+        height: 860px;
+    }
+    .footer__info {
+        height: 410px;
+    }
+    .footer__info__contacts__numTel {
+        width: 100%;
+    }
+    .footer__info__contacts__numTel > span {
+        font-size: 11px;
+    }
+    .footer__info__contacts__container > span {
+        font-size: 14px;
+    }
+    .footer__info__services__container > span {
+        font-size: 14px;
+    }
+    .footer__maps {
+        background-position: center center;
+        background-size: cover;
+        height: 408px;
+    }
+    .footer__maps > img {
+        left: 65%;
+        top: 605px;
+        width: 5.3%;
+    }
+    .rigts > span {
+        font-size: 14px;
+    }
+}
+@media (max-width:502px) {
+    .main {
+        max-width: 360px;
+        
+    }
+
+.img_vector {
+    left: 16.5%;
+}
+.header__search {
+    width: 16.3%;
+    left: 45%;
+}
+.header__search > span {
+    font-size: 16px;
+}
+.header__but {
+    width: 32.3%;
+    left: 64%;
+    font-size: 13px;
+}
+.header__numTel > span {
+    font-size: 15px;
+}
+.main_span {
+    font-size: 16px;
+}
+.quastions > h2 {
+    font-size: 16px;
+}.quastions > span {
+    font-size: 12px;
+}
+.product__title > h3 {
+    font-size: 14px;
+}
+.product__content__title {
+    font-size: 11px;
+}
+.product__content__title ~ span {
+    font-size: 10px;
+}
+.product__content__cross {
+    width: 4.2%;
+    height: 13px;
+}
+.footer__info > h1 {
+    font-size: 21px;
+}
+.footer__info__services__container {
+    width: 124px;
+}
+.footer__info__contacts__numTel > span {
+    font-size: 8px;
+}
+.footer__info__contacts__container > span {
+    font-size: 10px;
+}
+.footer__info__services__container > span {
+    font-size: 10px;
+}
+.footer__maps {
+    height: 374px;
+}
+.footer__maps > img {
+    left: 72%;
+    top: 621px;
+    width: 4.3%;
+    height: 25px;
+}
+.rigts > span {
+    font-size: 10px;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family:"Geometria"; 
+    src: url("./assets/fonts/geometria-cufonfonts/Geometria.ttf");
+}
+@font-face {
+    font-family: "Geometria-Bold"; 
+    src: url("./assets/fonts/geometria-cufonfonts/Geometria-Bold.ttf");
+}
+@font-face {
+    font-family: "Geometria-Medium";
+    src: url("./assets/fonts/geometria-cufonfonts/Geometria-Medium.ttf");
+}
