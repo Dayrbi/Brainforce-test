@@ -10,11 +10,11 @@
 <body>
     <div class="main">
         <div data-action="form-container" class="hide">
-            <img src="./assets/img/Style.png" alt="img is not available">
+            <img id="close-form" src="./assets/img/Style.png" alt="img is not available">
             <h4>Заполните форму и закажите бесплатную консультацию</h4>
             <form id="form-popup">
-                <input type="text" placeholder="Имя">
-                <input type="text" placeholder="Телефон">
+                <input name="name" type="text" placeholder="Имя" notValid>
+                <input name="numTel" id="numTel" type="text" placeholder="Телефон" notValid>
                 <button type="submit">Заказать консультацию</button>
             </form>
         </div>
@@ -189,5 +189,13 @@
         </div>
     </div>
     <script src="./assets/scripts/script.js"></script>
+    <script src="assets/scripts/jquery-3.6.0.min.js"></script>
+    <script src="./assets/scripts/jquery.maskedinput/jquery.maskedinput.min.js"></script>
+    <script>
+        $(document).ready( function () {
+        
+            $("#numTel").mask("+375(99)999-99-99");
+        });
+    </script>
 </body>
 </html>

@@ -81,6 +81,13 @@ div[data-action="form-container"] > h4 {
 .show {
     display: flex;
 }
+.message {
+    font-family: Geometria;
+    margin-left: 40%;
+    font-size: 13px;
+    position: relative;
+    bottom: 5%;
+}
 .header__burger {
     display: none;
 }
