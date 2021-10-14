@@ -10,6 +10,45 @@ background: #FFFFFF;
 margin: 0 auto;
 
 }
+div[data-action="show-message"] {
+    width: 80%;
+    height: 333px;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    background: url('./assets/img/Rectangle211.png');
+    
+}
+div[data-action="show-message"] > img {
+    position: absolute;
+    top: 5%;
+    right: 2%;
+}
+div[data-action="show-message"] > h1 {
+    width: 39%;
+    height: 45px;
+    font-family: Geometria-Medium;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 124%;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 0;
+}
+div[data-action="show-message"] > h4 {
+    width: 34%;
+    height: 50px;
+    font-family: Geometria-Medium;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 124%;
+    text-align: center;
+    color: #333333;
+}
 div[data-action="form-container"] {
     position: absolute;
     width: 31%;
@@ -23,6 +62,9 @@ div[data-action="form-container"] {
     background-position: center center;
     background-size: cover;
     z-index: 5;
+    opacity: 0;
+    transition: opacity 1s ease-in-out 0.3s;
+    
 }
 div[data-action="form-container"] > img {
     position: absolute;

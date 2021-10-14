@@ -4,11 +4,14 @@ const imgCross = document.querySelector('#close-form');
 const form = document.querySelector('#form-popup');
 const inputTel = form.elements.numTel;
 const inputName = form.elements.name;
+const divMessage = document.querySelector('div[data-action="show-message"]');
+const imgClose = document.querySelector('#close-message');
 
 consBut.addEventListener('click', showForm);
 imgCross.addEventListener('click', closeForm);
 form.addEventListener('submit', sendForm);
 document.addEventListener('keyup', chekValidForm);
+imgClose.addEventListener('click', closeMess);
 
 
 function showForm() {
@@ -17,19 +20,31 @@ function showForm() {
 
         formContainer.classList.remove("hide");
         formContainer.classList.add("show");
+
+         setTimeout(() => formContainer.style.opacity = "1",0);
     }
     else {
 
-        formContainer.classList.remove("show");
-        formContainer.classList.add("hide");
+        formContainer.style.opacity = "0";
+
+        setTimeout(() => {
+            formContainer.classList.remove("show");
+            formContainer.classList.add("hide");
+        },1000);
+        
+        
     }
    
 
 }
 function closeForm() {
 
-    formContainer.classList.remove("show");
-    formContainer.classList.add("hide");
+    formContainer.style.opacity = "0";
+
+     setTimeout(() => {
+        formContainer.classList.remove("show");
+        formContainer.classList.add("hide");
+    },1000);
 
     inputTel.value = "";
     inputName.value = "";
@@ -102,6 +117,7 @@ function chekValidForm(event) {
 
 function sendForm(event) {
     console.log('send form')
+    event.preventDefault();
     if (inputTel.hasAttribute("notValid") || inputName.hasAttribute("notValid")) {
 
         event.preventDefault();
@@ -113,6 +129,29 @@ function sendForm(event) {
         span.classList.add("message");
         event.target.after(span);
     }
+    else {
+        formContainer.classList.remove("show");
+        formContainer.classList.add("hide");
+
+        inputTel.value = "";
+        inputName.value = "";
+
+        document.querySelector('.message') ? document.querySelector('.message').remove() : '';
+        inputName.style.borderColor = "black";
+        inputTel.style.borderColor = "black";
+        
+        divMessage.classList.remove('hide');
+        divMessage.classList.add('show');
+
+        setTimeout(() => {
+            divMessage.classList.remove('show');
+            divMessage.classList.add('hide');
+        },5000);
+    }
+}
+function closeMess() {
     
+    divMessage.classList.remove('show');
+    divMessage.classList.add('hide');
 }
 
